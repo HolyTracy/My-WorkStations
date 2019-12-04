@@ -2,8 +2,10 @@
     <div id="app">
         <el-container>
             <el-header>Header</el-header>
-            <el-main>Main</el-main>
-            <el-footer>Footer</el-footer>
+            <el-main>
+                <router-view></router-view>
+            </el-main>
+            <el-footer>Copyright © 2019 陈北七</el-footer>
         </el-container>
     </div>
 </template>
@@ -15,17 +17,24 @@ export default {
 </script>
 
 <style>
-.el-header,
-.el-footer {
-    background-color: #b3c0d1;
+body {
+    margin: 0px;
+}
+.el-header {
+    background-color: #000000;
     color: #333;
     text-align: center;
     line-height: 60px;
 }
+.el-footer {
+    background-color: #000000;
+    color: #4c4d4e;
+    text-align: center;
+    line-height: 60px;
+}
 .el-main {
-    background-color: #e9eef3;
+    background-color: #4c4d4e;
     color: #333;
     text-align: center;
-    line-height: 160px;
 }
 </style>
