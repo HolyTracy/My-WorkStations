@@ -1,23 +1,31 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
-  </div>
+    <div id="app">
+        <el-container>
+            <el-header>Header</el-header>
+            <el-main>Main</el-main>
+            <el-footer>Footer</el-footer>
+        </el-container>
+    </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+    name: 'App'
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.el-header,
+.el-footer {
+    background-color: #b3c0d1;
+    color: #333;
+    text-align: center;
+    line-height: 60px;
+}
+.el-main {
+    background-color: #e9eef3;
+    color: #333;
+    text-align: center;
+    line-height: 160px;
 }
 </style>
