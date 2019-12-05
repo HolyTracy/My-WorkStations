@@ -3,7 +3,7 @@
         <el-row :gutter="20">
             <el-col :span="12">
                 1212
-                <audio src="/static/奇妙能力歌-田馥甄.mp3" autoplay loop></audio>
+                <audio src="../../static/奇妙能力歌-田馥甄.mp3" autoplay loop></audio>
             </el-col>
             <el-col :span="12">
                 <div>2</div>
