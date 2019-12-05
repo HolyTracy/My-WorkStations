@@ -1,12 +1,14 @@
 <template>
     <div id="app">
         <el-container>
-            <el-header>Header</el-header>
+            <el-header>陈北七</el-header>
             <el-main>
+                cnm傻逼season
                 <router-view></router-view>
             </el-main>
             <el-footer>Copyright © 2019 陈北七</el-footer>
         </el-container>
+        <!-- <audio src="../static/奇妙能力歌-田馥甄.mp3" autoplay loop></audio> -->
     </div>
 </template>
 
@@ -22,8 +24,8 @@ body {
 }
 .el-header {
     background-color: #000000;
-    color: #333;
-    text-align: center;
+    color: #a18aac;
+    text-align: right;
     line-height: 60px;
 }
 .el-footer {
