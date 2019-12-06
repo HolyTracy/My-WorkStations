@@ -5,8 +5,19 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import ViewUI from 'view-design'
+import 'view-design/dist/styles/iview.css'
 
 Vue.use(ElementUI)
+Vue.use(ViewUI, {
+    transfer: true,
+    size: 'large',
+    capture: false,
+    select: {
+        arrow: 'md-arrow-dropdown',
+        arrowSize: 20
+    }
+})
 
 Vue.config.productionTip = false
 
