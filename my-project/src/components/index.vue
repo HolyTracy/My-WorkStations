@@ -1,17 +1,14 @@
 <template>
-    <div>
-        <Slider v-model="value" range />
-    </div>
+    <div></div>
 </template>
 
 <script>
 export default {
     name: 'index',
     data() {
-        return {
-            value: [9, Math.PI]
-        }
-    }
+        return {}
+    },
+    beforeMount() {}
 }
 </script>
 

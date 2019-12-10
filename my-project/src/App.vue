@@ -7,7 +7,7 @@
             </el-main>
             <el-footer>Copyright © 2019 陈北七</el-footer>
         </el-container>
-        <audio src="../static/沿海公路的出口.mp3" autoplay loop></audio>
+        <!-- <audio src="../static/沿海公路的出口.mp3" autoplay loop></audio> -->
     </div>
 </template>
 
@@ -23,6 +23,13 @@ export default {
 <style>
 body {
     margin: 0px;
+    height: 100%;
+}
+#app {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    position: absolute;
 }
 .el-header {
     background-color: #000000;
@@ -35,10 +42,10 @@ body {
     color: #4c4d4e;
     text-align: center;
     line-height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 .el-main {
-    background-color: #4c4d4e;
-    color: #333;
-    text-align: center;
 }
 </style>
