@@ -3,12 +3,15 @@
 </template>
 
 <script>
+import XLSX from 'xlsx'
 export default {
     name: 'index',
     data() {
         return {}
     },
-    beforeMount() {}
+    compute: {},
+    watch: {},
+    methods: {}
 }
 </script>
 

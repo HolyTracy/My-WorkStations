@@ -19,6 +19,7 @@ module.exports = {
         'vue-router': 'VueRouter',
         vuex: 'Vuex',
         'element-ui': 'ELEMENT'
+        // xlsx: 'xlsx'
     },
     output: {
         path: config.build.assetsRoot,
