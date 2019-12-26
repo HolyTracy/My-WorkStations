@@ -17,7 +17,7 @@
             </el-main>
             <el-footer>Copyright © 2019 陈北七</el-footer>
         </el-container>
-        <!-- <audio src="../static/沿海公路的出口.mp3" autoplay loop></audio> -->
+        <audio src="../static/沿海公路的出口.mp3" autoplay loop></audio>
     </div>
 </template>
 
