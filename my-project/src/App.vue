@@ -8,7 +8,7 @@
                         <i class="el-icon-arrow-down el-icon--right"></i>
                     </span>
                     <el-dropdown-menu slot="dropdown">
-                        <el-dropdown-item icon="el-icon-ice-cream-round">黄金糕</el-dropdown-item>
+                        <el-dropdown-item icon="el-icon-ice-cream-round">田馥甄的工作室</el-dropdown-item>
                     </el-dropdown-menu>
                 </el-dropdown>
             </el-header>
@@ -17,7 +17,7 @@
             </el-main>
             <el-footer>Copyright © 2019 陈北七</el-footer>
         </el-container>
-        <audio src="../static/沿海公路的出口.mp3" autoplay loop></audio>
+        <!-- <audio src="../static/沿海公路的出口.mp3" autoplay loop></audio> -->
     </div>
 </template>
 
@@ -25,10 +25,14 @@
 export default {
     name: 'App',
     data() {
-        return {}
+        return {
+            data1: null
+        }
     },
     methods: {
         handleCommand() {
+            this.data1
+            debugger
             this.$router.push({ path: '/excel' })
         }
     }
@@ -62,5 +66,6 @@ body {
     width: 100%;
 }
 .el-main {
+    width: fit-content;
 }
 </style>

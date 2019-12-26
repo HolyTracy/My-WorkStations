@@ -98,16 +98,13 @@ const openDownloadDialog = (url, saveName) => {
     aLink.dispatchEvent(event)
 }
 class utils {
-    static excelProcessor = (e, callback) => {
-        const fileList = e.target.files
-        if (fileList.length == 0) return
-        const f = fileList[0]
-        if (!/\.xlsx$/g.test(f.name)) {
-            alert('仅支持读取xlsx格式！')
+    static excelProcessor = (f, callback) => {
+        if (!/\.xlsx$/g.test(f.name) && !/\.xls$/g.test(f.name)) {
+            alert('仅支持读取excel的格式！')
             return
         }
         readWorkbookFromLocalFile(f, workbook => {
-            callback(readWorkbook(workbook))
+            callback(readWorkbook(workbook), f.name)
         })
     }
     static exportExcel = (dataArray, name) => {
@@ -115,6 +112,21 @@ class utils {
         const sheet = csv2sheet(csv)
         const blob = sheet2blob(sheet)
         openDownloadDialog(blob, name)
+    }
+
+    static exportCSV = (dataArray, name) => {
+        let str = ''
+        dataArray.forEach(row => {
+            str = str + row.join() + '\n'
+        })
+        str = str + '\n'
+        let uri = 'data:text/csv;charset=utf-8,\ufeff' + encodeURIComponent(str)
+        let link = document.createElement('a')
+        link.href = uri
+        link.download = name
+        document.body.appendChild(link)
+        link.click()
+        document.body.removeChild(link)
     }
 }
 

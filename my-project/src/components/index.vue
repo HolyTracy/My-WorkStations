@@ -1,9 +1,10 @@
 <template>
-    <div></div>
+    <div>
+        <img v-lazy="'../../static/1.png'" />
+    </div>
 </template>
 
 <script>
-import XLSX from 'xlsx'
 export default {
     name: 'index',
     data() {

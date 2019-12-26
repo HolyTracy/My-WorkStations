@@ -18,8 +18,8 @@ module.exports = {
         vue: 'Vue',
         'vue-router': 'VueRouter',
         vuex: 'Vuex',
-        'element-ui': 'ELEMENT'
-        // xlsx: 'xlsx'
+        'element-ui': 'ELEMENT',
+        'vue-lazyload': 'VueLazyload'
     },
     output: {
         path: config.build.assetsRoot,
