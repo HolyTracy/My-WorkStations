@@ -158,6 +158,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.el-divider {
+    opacity: 0;
+}
 .tien {
     position: absolute;
     height: 719px;

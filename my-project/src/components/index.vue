@@ -1,7 +1,5 @@
 <template>
-    <div>
-        <img v-lazy="'../../static/1.png'" />
-    </div>
+    <div>我的首页</div>
 </template>
 
 <script>
